@@ -49,7 +49,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Glob", url: "https://github.com/Bouke/Glob", .exact("1.0.5")),
-        .package(name: "Signals", url: "https://github.com/Kitura/BlueSignals.git", .upToNextMajor(from: "1.0.21")),
+        .package(name: "BlueSignals", url: "https://github.com/Kitura/BlueSignals.git", .upToNextMajor(from: "1.0.21")),
         .package(name: "swift-argument-parser", url: "https://github.com/apple/swift-argument-parser", from: "0.4.3"),
     ],
     targets: [
@@ -356,7 +356,7 @@ let package = Package(
         .target(
             name: "SignalHandling",
             dependencies: [
-                .product(name: "Signals", package: "Signals"),
+                .product(name: "Signals", package: "BlueSignals"),
                 "Types",
             ],
             path: "Sources/SignalHandling"
@@ -365,7 +365,7 @@ let package = Package(
             name: "SignalHandlingTests",
             dependencies: [
                 "SignalHandling",
-                .product(name: "Signals", package: "Signals"),
+                .product(name: "Signals", package: "BlueSignals"),
             ],
             path: "Tests/SignalHandlingTests"
         ),
