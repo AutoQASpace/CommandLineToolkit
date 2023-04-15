@@ -2,7 +2,7 @@
   "dependencies" : {
     "external" : {
         "Signals": {
-            "url": "https://github.com/IBM-Swift/BlueSignals.git",
+            "url": "https://github.com/Kitura/BlueSignals.git",
             "version": {
                 "exact": "1.0.21"
             },

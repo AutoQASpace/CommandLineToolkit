@@ -49,7 +49,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Glob", url: "https://github.com/Bouke/Glob", .exact("1.0.5")),
-        .package(name: "Signals", url: "https://github.com/IBM-Swift/BlueSignals.git", .exact("1.0.21")),
+        .package(name: "Signals", url: "https://github.com/Kitura/BlueSignals.git", .exact("1.0.21")),
         .package(name: "swift-argument-parser", url: "https://github.com/apple/swift-argument-parser", from: "0.4.3"),
     ],
     targets: [
