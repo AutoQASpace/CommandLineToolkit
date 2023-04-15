@@ -8,7 +8,7 @@ let package = Package(
     products: [
         .library(name: "AtomicModels", targets: ["AtomicModels"]),
         .library(name: "CLTExtensions", targets: ["CLTExtensions"]),
-        .library(name: "Collections", targets: ["Collections"]),
+        .library(name: "CollectionsUtils", targets: ["Collections"]),
         .library(name: "CommandSupport", targets: ["CommandSupport"]),
         .library(name: "DI", targets: ["DI"]),
         .library(name: "DateProvider", targets: ["DateProvider"]),
@@ -73,7 +73,7 @@ let package = Package(
             path: "Tests/CLTExtensionsTests"
         ),
         .target(
-            name: "Collections",
+            name: "CollectionsUtils",
             dependencies: [
             ],
             path: "Sources/Collections"
